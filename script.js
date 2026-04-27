@@ -18,6 +18,10 @@ function createTodoItem(text) {
     li.remove();
   });
 
+  span.addEventListener('click', () => {
+    li.classList.toggle('completed');
+  });
+
   li.append(span, button);
   return li;
 }

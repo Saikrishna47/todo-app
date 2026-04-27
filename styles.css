@@ -80,6 +80,12 @@ h1 {
 .todo-text {
   margin: 0;
   word-break: break-word;
+  cursor: pointer;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.65;
 }
 
 .delete-button {
